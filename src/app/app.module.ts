@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ChannelListComponent } from './channel-list/channel-list.component';
+import {ChannelDialog, ChannelListComponent} from './channel-list/channel-list.component';
 import {ChannelService} from './channel-list/channel.service';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -13,7 +13,8 @@ import {NgxSpinnerModule} from 'ngx-spinner';
 @NgModule({
   declarations: [
     AppComponent,
-    ChannelListComponent
+    ChannelListComponent,
+    ChannelDialog
   ],
   imports: [
     BrowserModule,
@@ -31,6 +32,6 @@ import {NgxSpinnerModule} from 'ngx-spinner';
   ],
   providers: [ChannelService, HttpClient],
   bootstrap: [AppComponent],
-  entryComponents: [ChannelListComponent]
+  entryComponents: [ChannelDialog]
 })
 export class AppModule { }
