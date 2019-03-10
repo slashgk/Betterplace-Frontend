@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+  }
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+h1 {
+  margin-top: 5px;
+  font-size: calc(1.2em + 1.3vw);
+  font-weight: 100;
+  letter-spacing: .01em;
+  text-shadow: .022em .022em .022em #111;
+  color: #448AFF;
+  text-align: center;
+}
+
+td {cursor: pointer;}
